@@ -9,13 +9,6 @@ const io = socketIo(server);
 const port = 3000;
 
 
-const session = new GameSession();
-
-const room1 = new Room(1);
-const room2 = new Room(2);
-
-session.addRoom(room1);
-session.addRoom(room2);
 
 
 io.on('connection', (socket) => {
